@@ -2,9 +2,9 @@
 
 **If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-![viewfinal](https://user-images.githubusercontent.com/109727844/204102879-086fee63-9bda-43b2-a1aa-49879c3f2d39.jpg)
+![Image](https://github.com/user-attachments/assets/cbcde7f1-824b-4eea-81c5-ca3af8b16edf)
 
-![view final](https://user-images.githubusercontent.com/109727844/204102930-fac80657-4d16-4816-b476-a88e984abefe.jpg)
+![Image](https://github.com/user-attachments/assets/d4c2bc8d-42d9-473f-b997-9d1831f4647d)
 
 - [Demo Project](https://fatemeh-hashemzadeh.github.io/html-css-practice/)
 
