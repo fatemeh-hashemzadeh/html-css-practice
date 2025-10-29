@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 40vh;
+
+            >.head {
+                width: 100%;
+                height: auto;
+                background-color: aliceblue;
+                display: flex;
+                position: relative;
+
+                >img {
+                    margin: 30px auto;
+                    width: auto;
+                    height: auto;
+                }
+
+                >.one {
+                    width: 350px;
+                    height: 40px;
+                    /* background-color: blueviolet; */
+                    position: absolute;
+                    left: 0;
+                    /* top: 20px; */
+                    margin: 100px 70px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    color: rgb(49, 49, 49);
+
+                    >li {
+                        list-style-type: none;
+                        text-align: center;
+                        padding: 0 10px;
+
+                        /* transition: 1s; */
+                        >svg {
+                            transition: 1s;
+
+                            &:hover {
+                                background-color: rgba(165, 42, 42, 0.309);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+                >.two {
+                    width: 170px;
+                    height: 40px;
+                    /* margin: 100px 20px; */
+                    /* background-color: rgb(255, 0, 132); */
+                    position: absolute;
+                    top: 100px;
+                    right: 70px;
+
+                    >li {
+                        list-style-type: none;
+
+                        >a {
+                            text-decoration: none;
+                            font-size: 12px;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            position: absolute;
+                            left: 30px;
+                            top: 10px;
+
+                            &:hover {
+                                color: rgb(81, 0, 0);
+                            }
+
+                            /* padding: 20px 20px; */
+                            >svg {
+                                position: absolute;
+                                left: -24px;
+                                top: -2px;
+                                transition: 1s;
+
+                                &:hover {
+                                    background-color: rgba(123, 2, 26, 0.656);
+                                    border-radius: 20px;
+
+                                }
+                            }
+                        }
+
+                        >svg {
+                            position: absolute;
+                            left: 140px;
+                            top: 6px;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            >.box {
+                width: 100%;
+                height: 10vh;
+                background-color: brown;
+                position: absolute;
+                top: 35%;
+                bottom: 0;
+
+                >ul {
+                    width: 900px;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin: 0 auto;
+                    justify-content: center;
+                    align-items: center;
+
+                    >li {
+                        list-style: none;
+                        padding: 0 35px;
+
+                        >a {
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: white;
+                            font-weight: bolder;
+                            font-family: monospace;
+                            transition: .5s;
+
+                            &:hover {
+                                color: rgba(171, 222, 119, 0.548);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        /* //////////////////////////////////////////////////// */
+
+
+        .background {
+            width: 100%;
+            height: 120vh;
+            background-image: url(img/back1.jpg);
+            background-color: rgba(0, 0, 0, 0.227);
+            position: relative;
+            top: 30px;
+
+            >* {
+                list-style-type: none;
+                background-color: rgba(0, 0, 0, 0.309);
+            }
+
+            >.one {
+                width: 100%;
+                height: 120vh;
+
+                >li:nth-of-type(1) {
+                    color: white;
+                    font-size: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+                    font-weight: bold;
+                    font-family: cursive;
+                }
+
+                >li:nth-of-type(2) {
+                    color: white;
+                    font-size: 5em;
+                    position: absolute;
+                    top: 40%;
+                    left: 30%;
+                    font-weight: bold;
+                }
+
+                >li:nth-of-type(3) {
+                    color: white;
+                    position: absolute;
+                    left: 42%;
+                    top: 65%;
+                    width: 200px;
+                    height: 45px;
+                    background-color: beige;
+                    display: flex;
+                    transition: .5s;
+
+                    &:hover {
+                        background-color: rgb(236, 163, 145);
+                    }
+
+                    >a {
+                        position: absolute;
+                        top: 12px;
+                        left: 47px;
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: rgb(42, 42, 42);
+                    }
+
+                }
+            }
+
+            >.two {
+                width: 100%;
+                height: 8%;
+                z-index: 30;
+                /* background-color: aqua; */
+                position: absolute;
+                /* top: 10px; */
+                /* border: ; */
+                bottom: -30px;
+
+                >li:nth-of-type(1) {
+                    width: 25%;
+                    height: 100%;
+                    background-color: rgb(243, 240, 240);
+                    margin: 0 80px;
+
+                    >a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: rgb(1, 1, 1);
+                        /* padding: 140px 30px; */
+                        position: absolute;
+                        top: 20px;
+                        left: 110px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        /* position: absolute; */
+                        /* top: 30px; */
+                    }
+                }
+
+
+                >li:nth-of-type(2) {
+                    width: 25%;
+                    height: 100%;
+                    background-color: rgb(254, 253, 253);
+                    /* margin: 0 240px; */
+                    position: absolute;
+                    left: 40%;
+                    bottom: 0;
+
+                    >a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: rgb(6, 6, 6);
+                        /* padding: 40px 30px; */
+                        position: absolute;
+                        top: 20px;
+                        left: 10px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        /* position: absolute; */
+                        /* top: 30px; */
+                    }
+                }
+
+
+
+                >li:nth-of-type(3) {
+                    width: 25%;
+                    height: 100%;
+                    background-color: rgb(253, 250, 250);
+                    position: absolute;
+                    left: 72%;
+                    bottom: 0;
+
+                    >a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: rgb(3, 3, 3);
+                        /* padding: 40px 30px; */
+                        position: absolute;
+                        top: 20px;
+                        left: 10px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        /* position: absolute; */
+                        /* top: 30px; */
+                    }
+                }
+
+
+            }
+
+        }
+
+        /* ///////////////////////////////////////////// */
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            /* background-color: rgb(2, 2, 73); */
+            position: relative;
+
+            >h4 {
+                position: absolute;
+                right: 380px;
+                top: 24%;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            >h1 {
+                position: absolute;
+                top: 30%;
+                right: 280px;
+                font-size: 50px;
+            }
+
+            >p {
+                right: 140px;
+                top: 45%;
+                color: rgb(49, 49, 49);
+                position: absolute;
+                width: 500px;
+                height: 50px;
+                font-size: 17px;
+                line-height: 25px;
+            }
+
+            a {
+                color: rgb(103, 3, 3);
+                position: absolute;
+                bottom: 25%;
+                right: 430px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                font-weight: bold;
+                transition: .5s;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            >figure {
+                width: 500px;
+                height: 200px;
+                /* border: 1px solid red; */
+                position: absolute;
+                top: 20%;
+                left: 5%;
+
+            }
+        }
+
+        /* ///////////////////////////////////////////////////// */
+        .grass {
+            width: 100%;
+            height: 100vh;
+            /* background-color: rgb(1, 122, 9); */
+            background-image: url(img/3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            >.box {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(240, 248, 255, 0.948);
+
+                >li {
+                    width: 40%;
+                    height: 70%;
+                    border: 7px groove rgba(221, 225, 6, 0.657);
+                    position: absolute;
+                    top: 50px;
+                    left: 80px;
+                    list-style: none;
+
+                    >h4 {
+                        position: absolute;
+                        top: 50px;
+                        left: 70px;
+                    }
+
+                    >h1 {
+                        position: absolute;
+                        top: 80px;
+                        left: 60px;
+                        font-size: 50px;
+
+                    }
+
+                    >p {
+                        width: 330px;
+                        height: 100px;
+                        color: rgb(71, 70, 70);
+                        font-size: 15px;
+                        font-family: cursive;
+                        top: 170px;
+                        left: 60px;
+                        position: absolute;
+                        line-height: 24px;
+                    }
+
+                }
+
+                a {
+                    color: rgb(103, 3, 3);
+                    position: absolute;
+                    bottom: 15%;
+                    /* right: 430px; */
+                    /* top: 200px; */
+                    left: 60px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size: 15px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+
+            }
+
+            >figure {
+                width: 55%;
+                height: 50%;
+                position: absolute;
+                right: 280px;
+                top: 10%;
+                /* border: 1px solid red; */
+                clip-path: polygon(24% 0, 100% 0%, 75% 100%, 0% 100%);
+
+                margin: 50px -120px;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    /* position: absolute; */
+                    /* right: -20px; */
+                    /* left: 30px; */
+                }
+
+            }
+        }
+
+        /* ////////////////////////////////////////////////// */
+        .container1 {
+            width: 100%;
+            height: 160vh;
+            position: relative;
+            background-image: url(img/4);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            >.pic {
+                background-color: rgba(255, 254, 254, 0.859);
+                width: 100%;
+                height: 160vh;
+                border: 5px solid white;
+
+                >h4 {
+                    position: absolute;
+                    left: 43%;
+                    top: 8%;
+                    text-transform: uppercase;
+                }
+
+                >h1 {
+                    position: absolute;
+                    left: 34%;
+                    top: 12%;
+                    font-size: 60px;
+                    font-weight: normal;
+                }
+
+                >p {
+                    width: 60%;
+                    height: 70px;
+                    position: absolute;
+                    left: 20%;
+                    top: 22%;
+                    font-size: 17px;
+                    text-align: center;
+                    line-height: 30px;
+                    color: rgb(105, 104, 104);
+                }
+
+                >.box1 {
+                    width: 27%;
+                    height: 500px;
+                    border: 7px solid rgba(255, 196, 0, 0.653);
+                    position: absolute;
+                    left: 80px;
+                    bottom: 150px;
+
+                    >img {
+                        width: 100%;
+                        height: 360px;
+                        object-fit: cover;
+                        /* position: absolute; */
+                        padding: 10px 10px;
+                    }
+
+                    >h1 {
+                        /* position:; */
+                        position: absolute;
+                        top: 80%;
+                        left: 20%;
+                    }
+
+                    >h3 {
+                        position: absolute;
+                        top: 90%;
+                        left: 32%;
+                        color: rgb(122, 80, 2);
+                        font-size: 18px;
+                    }
+                }
+
+
+                >.box2 {
+                    width: 27%;
+                    height: 500px;
+                    border: 7px solid rgba(255, 196, 0, 0.653);
+                    position: absolute;
+                    left: 500px;
+                    bottom: 150px;
+
+                    >img {
+                        width: 100%;
+                        height: 360px;
+                        object-fit: cover;
+                        /* position: absolute; */
+                        padding: 10px 10px;
+
+                    }
+
+                    >.boxy {
+                        width: 94.5%;
+                        height: 30px;
+                        background-color: rgba(225, 174, 5, 0.928);
+                        position: absolute;
+                        top: 2%;
+                        left: 10px;
+
+                        >span {
+                            color: white;
+                            position: absolute;
+                            top: 7px;
+                            left: 130px;
+
+                        }
+
+
+                    }
+
+
+                    >h1 {
+                        /* position:; */
+                        position: absolute;
+                        top: 80%;
+                        left: 20%;
+                    }
+
+                    >h3 {
+                        position: absolute;
+                        top: 90%;
+                        left: 32%;
+                        color: rgb(122, 80, 2);
+                        font-size: 18px;
+                    }
+
+
+                }
+
+
+
+                >.box3 {
+                    width: 27%;
+                    height: 500px;
+                    border: 7px solid rgba(255, 196, 0, 0.653);
+                    position: absolute;
+                    /* left: 500px; */
+                    right: 75px;
+                    bottom: 150px;
+
+                    >img {
+                        width: 100%;
+                        height: 360px;
+                        object-fit: cover;
+                        /* position: absolute; */
+                        padding: 10px 10px;
+                    }
+
+                    >h1 {
+                        /* position:; */
+                        position: absolute;
+                        top: 80%;
+                        left: 20%;
+                    }
+
+                    >h3 {
+                        position: absolute;
+                        top: 90%;
+                        left: 32%;
+                        color: rgb(122, 80, 2);
+                        font-size: 18px;
+                    }
+
+                }
+
+                >.box4 {
+                    width: 250px;
+                    height: 50px;
+                    background-color: rgb(223, 165, 29);
+                    margin: 920px auto;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: brown;
+                        color: aliceblue;
+                    }
+
+                    >a {
+                        color: rgb(8, 7, 7);
+                        position: absolute;
+                        left: 44%;
+                        text-decoration: none;
+                        bottom: 6.5%;
+                        transition: .4s;
+
+                        &:hover {
+                            color: rgb(251, 248, 248);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        /* ///////////////////////////////////////////////// */
+        .container2 {
+            width: 100%;
+            height: 80vh;
+            background-image: url(img/back4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            >.box1 {
+                width: 600px;
+                height: 50px;
+                background-color: white;
+                position: absolute;
+                left: 28%;
+                bottom: 30%;
+
+                >#se {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 15px;
+
+                    &:hover {
+                        border: 1px solid red;
+                    }
+                }
+            }
+
+            >.box2 {
+                width: 600px;
+                height: 50px;
+                background-color: rgb(248, 200, 209);
+                position: absolute;
+                left: 28%;
+                bottom: 18%;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                transition: .5s;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: brown;
+                    color: white;
+                }
+            }
+
+            >h4 {
+                color: white;
+                font-size: 15px;
+                position: absolute;
+                left: 40%;
+                top: 10%;
+                text-transform: uppercase;
+            }
+
+            >h1 {
+                color: white;
+                font-size: 50px;
+                position: absolute;
+                left: 34%;
+                top: 20%;
+            }
+
+            >p {
+                width: 50%;
+                height: 70px;
+                position: absolute;
+                left: 25%;
+                top: 40%;
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+                color: rgb(251, 248, 248);
+            }
+        }
+
+        /* /////////////////////////////////////////////////////////////// */
+
+        .bottom {
+            width: 100%;
+            height: 65vh;
+            /* background-color: blue; */
+
+            >img:nth-of-type(1) {
+                position: absolute;
+                right: 80px;
+                margin: 70px 0;
+                width: 150px;
+                height: 50px;
+                object-fit: cover;
+            }
+
+            >img:nth-of-type(2) {
+                position: absolute;
+                left: 110px;
+                margin: 50px 0;
+                height: 150px;
+            }
+
+            >img:nth-of-type(3) {
+                position: absolute;
+                left: 80px;
+                margin: 230px 0;
+                height: 70px;
+            }
+
+            >li:nth-of-type(1) {
+                position: absolute;
+                margin: 340px 240px;
+                list-style-type: none;
+                color: #700303;
+                width: 18px;
+                height: 15px;
+                border-radius: 20px;
+                transition: .5s;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+
+            >li:nth-of-type(2) {
+                position: absolute;
+                margin: 340px 200px;
+                list-style-type: none;
+                color: #700303;
+                width: 16px;
+                height: 15px;
+                border-radius: 20px;
+                transition: .5s;
+
+                &:hover {
+                    transform: rotate(30deg);
+                }
+            }
+
+
+            >li:nth-of-type(3) {
+                position: absolute;
+                margin: 340px 160px;
+                list-style-type: none;
+                color: #700303;
+                width: 16px;
+                height: 15px;
+                border-radius: 20px;
+                transition: .5s;
+
+                &:hover {
+                    transform: rotate(20deg);
+                }
+
+            }
+
+            >.one {
+                width: 300px;
+                height: 200px;
+                position: absolute;
+                left: 30%;
+                bottom: -540%;
+
+                >li {
+                    list-style: none;
+                    padding: 6px 10px;
+                    text-transform: uppercase;
+                    font-family: cursive;
+                    transition: .5s;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #9d0202;
+                    }
+                }
+            }
+
+            >.two {
+                width: 300px;
+                height: 200px;
+                /* border: 1px solid red; */
+                /* margin: 100px 100px; */
+                position: absolute;
+                left: 52%;
+                /* top: 0; */
+                bottom: -540%;
+                cursor: pointer;
+
+                >li {
+                    list-style: none;
+                    padding: 6px 10px;
+                    text-transform: uppercase;
+                    font-family: cursive;
+                    transition: .5s;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #9e0707;
+                    }
+                }
+            }
+
+            >p {
+                position: absolute;
+                left: 32%;
+                bottom: -548%;
+                /* padding: 300px 0; */
+                font-size: 12px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img src="img/countrybutcher-logo@1x.webp" alt="">
+            <ul class="one"> FOLLOW US:
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#5c0404">
+                        <path
+                            d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+                        </path>
+                    </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#5c0404">
+                        <path
+                            d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z">
+                        </path>
+                    </svg></li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#5c0404">
+                        <path
+                            d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                        </path>
+                    </svg></li>
+            </ul>
+
+
+
+            <ul class="two">
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                            fill="black">
+                            <path
+                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z">
+                            </path>
+                        </svg>MY ACCOUNT</a></li>
+
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="currentColor">
+                        <path
+                            d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z">
+                        </path>
+                    </svg></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">OUR HERBRITAGE</a></li>
+                <li><a href="">OUR SHOP</a></li>
+                <li><a href="">OUR FRAM</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- /////////////////////////////////// -->
+    <section class="background">
+        <ul class="one">
+            <li>Premium Unrivalled Quality</li>
+            <li>Meat & Poultry</li>
+            <li><a href="">Shop Online</a></li>
+        </ul>
+
+
+        <ul class="two">
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="currentColor">
+                        <path
+                            d="M17 8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8ZM17 10V13H21V12.715L18.9917 10H17Z">
+                        </path>
+                    </svg> &nbsp; Refrigerated Truck Delivery
+
+                </a></li>
+            <li><a href="">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="currentColor">
+                        <path
+                            d="M22.0049 10.9998V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V10.9998H22.0049ZM22.0049 6.99979H2.00488V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V6.99979Z">
+                        </path>
+                    </svg>
+                    &nbsp; Free Shipping on orders over $200
+                </a></li>
+            <li><a href="">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="currentColor">
+                        <path
+                            d="M2.00488 19H22.0049V21H2.00488V19ZM2.00488 5L7.00488 8.5L12.0049 2L17.0049 8.5L22.0049 5V17H2.00488V5ZM4.00488 8.84131V15H20.0049V8.84131L16.5854 11.2349L12.0049 5.28024L7.42435 11.2349L4.00488 8.84131Z">
+                        </path>
+                    </svg>
+
+                    &nbsp; Award Winning Premium Meats
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- /////////////////////////////////////////////////// -->
+
+    <div class="container">
+        <h4>Traditional & Authentic</h4>
+        <h1>Country Butcher</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum aliquam cursus. Mauris
+            molestie aliquam urna. Curabitur nec eleifend risus. Integer eget libero sed elit pharetra ultricies eu in
+            augue. Nullam nunc justo, porttitor id semper nec, pharetra sit amet enim. Donec rutrum diam vel est cursus
+            lobortis.
+        </p>
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z">
+                </path>
+            </svg>
+            Learn more about us
+        </a>
+        <figure>
+            <img src="img/1.jpg" alt="">
+        </figure>
+    </div>
+    <!-- //////////////////////////////////////////////// -->
+    <div class="grass">
+        <ul class="box">
+            <li>
+                <h4>Award Winning Produce</h4>
+                <h1>Order Online</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum aliquam cursus.
+                    Mauris molestie aliquam urna. Curabitur nec eleifend risus. Integer eget libero sed elit pharetra
+                    ultricies eu in augue. Integer eget libero sed elit pharetra ultricies eu in augue.</p>
+
+
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z">
+                        </path>
+                    </svg>
+                    Browse our items
+                </a>
+
+            </li>
+        </ul>
+        <figure>
+            <img src="img/2.jpg" alt="">
+        </figure>
+    </div>
+    <!-- /////////////////////////////////// -->
+    <div class="container1">
+        <div class="pic">
+            <h4>Firm Favorites</h4>
+            <h1>Popular Produce</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum aliquam cursus. Mauris
+                molestie aliquam urna. Curabitur nec eleifend risus. Integer eget libero sed elit pharetra ultricies eu
+                in augue.
+            </p>
+            <div class="box1">
+                <img src="img/5" alt="">
+                <h1>Chicken Fillet</h1>
+                <h3>$8.99 – $38.99</h3>
+            </div>
+
+
+
+            <div class="box2">
+                <img src="img/6" alt="">
+                <div class="boxy"><span>ON SALE</span></div>
+                <h1>Chicken Fillet</h1>
+                <h3>$8.99 – $38.99</h3>
+            </div>
+
+
+
+            <div class="box3">
+                <img src="img/7" alt="">
+                <h1>Chicken Fillet</h1>
+                <h3>$8.99 – $38.99</h3>
+            </div>
+
+
+            <div class="box4">
+                <a href="">
+                    BROWSE OUR RANGE
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////// -->
+    <div class="container2">
+        <div class="box1"> <input type="text" id="se" placeholder=" &nbsp;&nbsp;&nbsp; Enter your email address...">
+        </div>
+        <div class="box2">
+            Subscribe
+        </div>
+        <h4>Fresh Offers In Your Inbox</h4>
+        <h1>Weekly Newsletter</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum aliquam cursus. Mauris
+            molestie aliquam urna. Curabitur nec eleifend risus.</p>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+    <div class="bottom">
+        <img src="img/footer-card-logos-200x72.jpg" alt="">
+        <img src="img/countrybutcher-logo@1x.webp" alt="">
+        <img src="img/quality-badges-400x112.jpg" alt="">
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#700303">
+                <path
+                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                </path>
+            </svg>
+        </li>
+
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#700303">
+                <path
+                    d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z">
+                </path>
+            </svg></li>
+
+        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#700303">
+                <path
+                    d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+                </path>
+            </svg></li>
+
+        <ul class="one">
+
+            <li>Our Heritage</li>
+            <li>Our Shop</li>
+            <li>Our Farm</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+
+        </ul>
+
+
+        <ul class="two">
+
+            <li>Privacy Policy</li>
+            <li>My Account</li>
+            <li>Buy Avada Now</li>
+        </ul>
+
+
+        <p>© 2012 - 2025 • Avada is a Website Builder for WordPress and eCommerce • All Rights Reserved • Developed by
+            ThemeFusion</p>
+
+
+    </div>
+</body>
+
+</html>
